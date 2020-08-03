@@ -91,4 +91,9 @@ class TicTacToe
     won? || full? || draw?
   end
 
+  def winner
+    if "X".won?
+      return X
+  end
+
 end
