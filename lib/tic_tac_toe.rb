@@ -78,4 +78,7 @@ class TicTacToe
       @board[array[0]] == @board[array[1]] && @board[array[1]] == @board[array[2]] && position_taken?(array[0])
     end
   end
-end
+
+  def full?(board)
+   board.all? {|i| i == "X" || i == "O"}
+  end
