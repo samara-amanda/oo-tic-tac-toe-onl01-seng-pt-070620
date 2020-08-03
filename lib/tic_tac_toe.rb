@@ -92,8 +92,8 @@ class TicTacToe
   end
 
   def winner
-    if "X".won?
-      return "X"
+    if winning_array = won?
+      @board[winning_array.first]
     end
   end
 
